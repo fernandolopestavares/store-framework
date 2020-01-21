@@ -41,11 +41,13 @@
       "product-quantity"
     ]
   },
-  "shipping-simulator": {
+  "sku-selector": {
     "props": {
+      "initialSelection": "empty",
+      "showValueNameForImageVariation": true,
+      "showVariationsErrorMessage": true,
       "hideImpossibleCombinations": false,
-      "showValueForVariation": "none",
-      "showVariationsErrorMessage": true
+      "showValueForVariation": "all"
     }
   },
   "stack-layout#brand": {
