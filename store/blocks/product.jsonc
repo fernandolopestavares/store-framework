@@ -43,7 +43,9 @@
   },
   "shipping-simulator": {
     "props": {
-      "skuID": "46"
+      "hideImpossibleCombinations": false,
+      "showValueForVariation": "none",
+      "showVariationsErrorMessage": true
     }
   },
   "stack-layout#brand": {
