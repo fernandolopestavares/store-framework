@@ -2,7 +2,7 @@
   "store.custom#about-us" : {
     "blocks": [
       "tab-layout#home",
-      "tab-content.item#home1"
+      "rich-text#home1"
     ]
   },
 
@@ -44,9 +44,6 @@
   },
 
   "tab-content.item#home1": {
-    "children": [
-      "rich-text#home1"
-    ],
     "props": {
       "tabId": "sobre"
     }
