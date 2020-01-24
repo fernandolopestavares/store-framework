@@ -15,7 +15,8 @@
   "header-layout.desktop": {
     "children": [
       "header-row#notification",
-      "header-row#main"
+      "header-row#main",
+      "header-row#menu"
     ]
   },
 
@@ -36,21 +37,23 @@
   },
 
   "header-row#main": {
-      "props": {
-          "inverted": true,
-          "sticky": true,
-          "fullWidth": false
-      },
       "children": [
           "logo",
           "header-spacer",
           "search-bar",
           "minicart",
           "login"
-      ]
+      ],
+      "props": {
+          "inverted": true,
+          "sticky": true,
+          "fullWidth": false
+      }
   },
+
   "header-row#main-mobile": {
       "children": [
+        "drawer",
         "logo",
         "header-spacer",
         "minicart",
@@ -61,9 +64,9 @@
         "sticky": true,
         "inverted":true
       }
-    },
+  },
     
-    "header-row#search": {
+  "header-row#search": {
       "children": [
         "search-bar"
       ],
@@ -74,21 +77,47 @@
 
   "login":{
       "props": {
-          "showIconProfile": true,
-          "iconLabel": "Login"
+        "showIconProfile": true,
+        "iconLabel": "Login"
       }
-  },
+    },
     
-  "logo":{
+    "logo":{
       "props": {
-          "url": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/flatflat___6081e50402943bcb11bc45a8e613aa72.png"
+        "url": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/flatflat___6081e50402943bcb11bc45a8e613aa72.png"
       }
   },
 
   "rich-text#header": {
       "props": {
-          "text": "**Free Shipping on orders over $50**",
-          "textPosition": "CENTER"
+        "text": "**Free Shipping on orders over $50**",
+        "textPosition": "CENTER"
       }
+  },
+
+  "header-row#menu": {
+      "children": [
+        "header-spacer",
+        "vtex.menu@2.x:menu#categories",
+        "header-spacer"
+      ]
+  },
+
+  "vtex.menu@2.x:menu#categories": {
+      "children": [
+        "menu-item#major-appliances",
+        "menu-item#small-appliances",
+        "menu-item#electronics"
+      ],
+   
+      "props":{
+        "orientation": "horizontal"
+      }
+  },
+
+  "vtex.menu@2.x:submenu#major":{
+      "children":[
+        "vtex.menu@2.x:menu#major"
+      ]
   }
 }
