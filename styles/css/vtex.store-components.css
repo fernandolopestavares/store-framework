@@ -1,21 +1,15 @@
 .infoCardHeadline {
   font-family: serif;
   font-size: 2.25rem;
-  font-weight: normal;
   color: black;
   font-weight: bold;
+  border: 2px solid black;
   padding: 24px;
-}
-
-.infoCardContainer {
-  max-width: 1260px;
-  margin: 0 auto;
-  padding: 0;
 }
 
 .infoCardCallActionContainer :global(.vtex-button) {
   color: white;
-  background-color: blue;
+  background-color: gray;
   border: transparent;
 }
 
@@ -25,10 +19,16 @@
   border: transparent;
 }
 
+.infoCardContainer {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .infoCardContainer--vintage {
-  background-color: #EDCFD1
+  background-color: #EDCFD1;
 }
 
 .infoCardContainer--metal {
-  background-color: #e1e1e1
+  background-color: #e1e1e1;
 }
